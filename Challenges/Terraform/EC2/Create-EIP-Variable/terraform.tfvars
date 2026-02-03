@@ -1,0 +1,1 @@
+KKE_eip = "elastic_ip"
