@@ -1,0 +1,13 @@
+---
+- name: Copy file to all servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Create a file and set custom owner
+      ansible.builtin.file:
+        path: /tmp/managed_file.txt
+        state: touch
+        owner: {{ file.owner }}
+        group: {{ file.owner }}
+        mode: '0644'
