@@ -1,4 +1,4 @@
-RG=$(az group list --query '[0].name')
+RG=$(az group list --query '[0].name' -o tsv)
 # Assuming RG is already created
 az network vnet create --name xfusion-vnet --resource-group $RG 
 
