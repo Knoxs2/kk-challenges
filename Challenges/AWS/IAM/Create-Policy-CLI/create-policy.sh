@@ -1,0 +1,1 @@
+aws iam create-policy --policy-name iampolicy_anita --policy-document file://policy.json
