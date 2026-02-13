@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: default
+  name: nginx 
+spec:
+  Containers:
+    - name: nginx
+      image: nginx:latest
+      imagePullPolicy: Always
+      ports:
+      - containerPort: 8080
+
+
+# Documentation yaml reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#get-read-the-specified-opod
+# Kubectl Documentation: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+# Command Validation: kubectl get pod nginx -n default
+        

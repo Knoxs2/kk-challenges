@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: default
+  name: redis
+spec:
+  containers:
+  - name: redis
+    image: redis
+    imagePullPolicy: Always
+    
+# Documentation yaml reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#get-read-the-specified-opod
+# Kubectl Documentation: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+# Command Validation: kubectl get pods redis -n default 
+        
