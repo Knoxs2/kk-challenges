@@ -1,6 +1,6 @@
 #!/bin/bash
 
-aws rds create-db-snapshot \ 
+aws rds create-db-snapshot \
     --db-snapshot-identifier nautilus-rds-snapshot \
     --db-instance-identifier nautilus-rds 
 
